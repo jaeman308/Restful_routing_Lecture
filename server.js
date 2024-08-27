@@ -29,6 +29,11 @@ app.post('/calculator', (req, res) => {
 });
 
 
+app.delete('/calculator', (req, res) => {
+    total = 0; 
+    res.status(200).json({total, msg: "Total Reset"}) //in order to send the message will need 200 status code 
+
+}); 
 
 
 
